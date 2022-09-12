@@ -1,12 +1,10 @@
-import Clock from "./components/Clock";
+import Calclator from "./components/Calculator";
 
 function App() {
 
-    console.log("App component Rendered");
-
     return (
         <div>
-            <Clock />
+            <Calclator />
         </div>
     );
 }
