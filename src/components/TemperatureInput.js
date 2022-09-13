@@ -5,7 +5,13 @@ const scaleNames = {
     f: 'Fahrenheit',
 };
 
-export default function TemperatureInput({ temperature, scale, onTemperatureChange }) {
+export default function TemperatureInput({ scale, temperature, onTemperatureChange, test }) {
+
+    console.log("TemperatureInput Component Rendered");
+    // console.log(temperature);
+    // console.log(scale);
+    //console.log(onTemperatureChange);
+    
     return (
         <fieldset>
             <legend>Enter temperature in {scaleNames[scale]}:</legend>

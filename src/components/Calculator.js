@@ -13,7 +13,16 @@ export default class Calclator extends React.Component {
         });
     };
 
+    test = () => {
+        this.setState({
+            name : "jahid"
+        })
+    }
+
     render() {
+
+        console.log("Calculator Component Rendered");
+
         const { temperature, scale } = this.state;
         const celsius = scale === 'f' ? convert(temperature, toCelsius) : temperature;
         const fahrenheit = scale === 'c' ? convert(temperature, toFahrenheit) : temperature;
@@ -24,11 +33,13 @@ export default class Calclator extends React.Component {
                     scale="c"
                     temperature={celsius}
                     onTemperatureChange={this.handleChange}
+                    test = {this.test}
                 />
                 <TemperatureInput
                     scale="f"
                     temperature={fahrenheit}
                     onTemperatureChange={this.handleChange}
+                    test = {this.test}
                 />
                 <BoilingVerdict celsius={parseFloat(celsius)} />
             </div>
