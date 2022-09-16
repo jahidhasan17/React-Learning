@@ -1,18 +1,20 @@
-import React from "react";
-import Counter from "./components/Counter";
+import React, { useState } from "react";
+import MyComponent from "./components/MyComponent";
 
+function App() {
 
+    const [show, setShow] = useState(true);
 
-class App extends React.Component {
-
-    render() {
-
-        return (
-            <div>
-                <Counter name={"jahid"}/>
-            </div>
-        );
-    }
+    return (
+        <div className="app">
+            <div>{show && <MyComponent />}</div>
+            <p>
+                <button type="button" onClick={() => setShow((prevShow) => !prevShow)}>
+                    {show ? 'Hide post' : 'Show post'}
+                </button>
+            </p>
+        </div>
+    );
 }
 
 export default App;
