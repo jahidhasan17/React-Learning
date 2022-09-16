@@ -1,13 +1,10 @@
-import Form from "./components/Form";
-import Time from "./components/Time";
+import ComplextCounter from "./components/ComplexCounter";
+import ComponentA from "./components/Prop-Drilling/ComponentA";
 
 export default function App() {
     return (
         <div className="app">
-            <div>
-                <Time />
-                <Form />
-            </div>
+            <ComponentA />
         </div>
     );
 }
