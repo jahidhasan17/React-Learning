@@ -13,4 +13,4 @@ function ComponentC() {
     );
 }
 
-export default React.useMemo(ComponentC);
+export default React.memo(ComponentC);
