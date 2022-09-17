@@ -1,12 +1,10 @@
-import ComplextCounter from "./components/ComplexCounter";
-import ComponentA from "./components/Prop-Drilling-useReducer+useContext/ComponentA";
-import GetPost from "./components/useReducer-useState/GetPost";
-import GetPost2 from "./components/useReducer-useState/GetPost2";
+import LayoutComponentOne from "./components/LayoutComponentOne";
+import LayoutComponentTwo from "./components/LayoutComponentTwo";
 
 export default function App() {
     return (
         <div className="app">
-            <GetPost2 />
+            <LayoutComponentTwo />
         </div>
     );
 }
