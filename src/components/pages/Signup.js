@@ -22,6 +22,7 @@ export default function Signup() {
 
 	const { signup } = useAuth();
   	const history = useHistory();
+	console.log(email);
 
 
 	async function handleSubmit(e) {
