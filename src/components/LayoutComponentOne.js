@@ -2,7 +2,7 @@ import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function LayoutComponentOne() {
 
-    const onSmallScreen = useWindowWidth(600);
+    const onSmallScreen = useWindowWidth("ComponentOne", 600);
 
     console.log("Rendered LayoutComponentOne ==> " + onSmallScreen);
 
